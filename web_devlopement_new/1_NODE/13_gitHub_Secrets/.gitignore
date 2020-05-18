@@ -3,3 +3,6 @@
 
 #2nd file
 node_modules/
+
+#3rd file
+.env
