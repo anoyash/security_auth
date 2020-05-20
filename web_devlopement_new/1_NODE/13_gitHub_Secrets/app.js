@@ -75,12 +75,12 @@ app.post("/login", function(req,res){
        } else {
           if(foundUser) {
             bcryptjs.compare(password, foundUser.password, function(err,result){
-
-            });
-            res.render("secrets");
-         }   
-       }
-    });
+              if(result === true)
+              res.render("secrets");
+      });
+     }
+    }
+  });
 });
 
 
